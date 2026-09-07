@@ -1,0 +1,17 @@
+# Compilação e Binários do .NET
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# VS Code / Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs e ficheiros locais
+*.log
+appsettings.Development.json
