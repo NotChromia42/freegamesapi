@@ -3,7 +3,7 @@
 Projeto desenvolvido para a unidade curricular **UC00614 - Desenvolvimento de Aplicações Web** (Etapas 1 a 4).
 
 ## Tema
-- **Tema Atribuído:** Jogos[cite: 1]
+- **Tema Atribuído:** Jogos
 - **API Externa Consumida:** [FreeToGame API](https://www.freetogame.com/api-doc)
 
 ## Endpoints Criados
