@@ -4,20 +4,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-// Registar o HttpClient para consumo da API externa
 builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
-// Configurar a pipeline HTTP
-if (app.Environment.IsDevelopment())
+// Configurar o Swagger para estar disponível em /swagger
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "FreeGames API v1");
+    c.RoutePrefix = "swagger";
+});
 
-app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
