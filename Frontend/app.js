@@ -9,7 +9,6 @@ let todosJogos = [];
 function mostrarJogos(jogos) 
 {
     // Remove os cards anteriores
-    //ignorando o card que coloquei no html D:
     listaJogos.replaceChildren();
 
     jogos.forEach((jogo) => {
@@ -18,24 +17,24 @@ function mostrarJogos(jogos)
 
         // Mostra a imagem do jogo
         const imagem = document.createElement("img");
-        imagem.src = jogo.thumbnail;
-        imagem.alt = `Capa de ${jogo.title}`;
+        imagem.src = jogo.imagem;
+        imagem.alt = `Capa de ${jogo.titulo}`;
         imagem.loading = "lazy";
 
         // Usa textContent para exibir os textos recebidos
         const titulo = document.createElement("h2");
-        titulo.textContent = jogo.title;
+        titulo.textContent = jogo.titulo;
 
         const descricao = document.createElement("p");
-        descricao.textContent = jogo.short_description;
+        descricao.textContent = jogo.descricaoCurta;
 
         // Mostra o gênero e a plataforma
         const categorias = document.createElement("div");
         categorias.className = "categorias";
         const genero = document.createElement("span");
-        genero.textContent = jogo.genre;
+        genero.textContent = jogo.genero;
         const plataforma = document.createElement("span");
-        plataforma.textContent = jogo.platform;
+        plataforma.textContent = jogo.plataforma;
 
         // Junta os elementos e coloca o card na página
         categorias.append(genero, plataforma);
@@ -55,7 +54,7 @@ async function carregarJogos() {
 
     try {
         const resposta = await fetch(
-            "http://localhost:5000/api/externa/jogos"
+            "http://localhost:5000/api/jogos"
         );
 
         // verificador API
@@ -82,7 +81,7 @@ pesquisa.addEventListener("input", () => {
     const termo = pesquisa.value.trim().toLowerCase();
 
     const jogosFiltrados = todosJogos.filter((jogo) =>
-        jogo.title.toLowerCase().includes(termo)
+        jogo.titulo.toLowerCase().includes(termo)
     );
 
     mostrarJogos(jogosFiltrados);

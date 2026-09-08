@@ -20,3 +20,5 @@ appsettings.Production.json
 
 # Permitir apenas o ficheiro de exemplo no Git
 !appsettings.Example.json
+
+frontend_versoes.txt
