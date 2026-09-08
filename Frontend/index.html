@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos gratuitos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jogos gratuitos</h1>
+        <p>Encontre seu próximo jogo.</p>
+    </header>
+
+    <main>
+        <label for="pesquisa">Pesquisar por nome</label>
+        <input
+            type="search"
+            id="pesquisa"
+            placeholder="Digite o nome de um jogo"
+        >
+
+        <p id="mensagem" role="status"></p>
+        <!-- exibição dos cards dos jogos -->
+        <section id="jogos" aria-label="Lista de jogos">
+            <article class="card-jogo">
+                <h2>Jogo de exemplo</h2>
+                <p>Uma breve descrição do jogo aparecerá aqui.</p>
+
+                <div class="categorias">
+                    <span>Shooter</span>
+                    <span>PC</span>
+                </div>
+
+                <button type="button">Ver detalhes</button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
