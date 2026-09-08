@@ -12,6 +12,11 @@ obj/
 *.userosscache
 *.sln.docstates
 
-# Logs e ficheiros locais
-*.log
+# Configurações locais e credenciais sensíveis
+appsettings.json
 appsettings.Development.json
+appsettings.Production.json
+*.log
+
+# Permitir apenas o ficheiro de exemplo no Git
+!appsettings.Example.json
