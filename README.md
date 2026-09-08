@@ -1,6 +1,6 @@
-# FreeToGame Web Application
+# Aplicação Web Freetogame
 
-Projeto desenvolvido para a unidade curricular **UC00614 - Desenvolvimento de Aplicações Web** (Etapas 1 a 6).
+Projeto desenvolvido para a unidade curricular **UC00614 - Desenvolvimento de Aplicações Web** (Etapas 1 a 7).
 
 Esta aplicação consiste numa Web API em ASP.NET Core interligada a uma interface Web (Frontend) em HTML, CSS e JavaScript. A API consome o serviço externo do **FreeToGame**, permite importar dados para uma base de dados local MySQL e disponibiliza endpoints de consulta e pesquisa consumidos pela interface do utilizador.
 
