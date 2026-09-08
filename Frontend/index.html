@@ -14,16 +14,29 @@
     </header>
 
     <main>
-        <label for="pesquisa">Pesquisar por nome</label>
-        <input
-            type="search"
-            id="pesquisa"
-            placeholder="Digite o nome de um jogo"
-        >
+    <!-- Organiza a pesquisa e o filtro lado a lado -->
+    <div class="filtros">
+        <div class="campo-pesquisa">
+            <label for="pesquisa">Pesquisar por nome</label>
+            <input
+                type="search"
+                id="pesquisa"
+                placeholder="Digite o nome de um jogo"
+            >
+        </div>
 
-        <p id="mensagem" role="status"></p>
-        <!-- cards pro js -->
-        <section id="jogos" aria-label="Lista de jogos"></section>
+        <div class="campo-genero">
+            <label for="genero">Filtrar por gênero</label>
+            <select id="genero">
+                <option value="">Todos os gêneros</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="mensagem">Carregando jogos...</div>
+    <div id="jogos" class="lista-jogos">
+        <!-- Os cards dos jogos serão inseridos aqui pelo JavaScript -->
+    </div>
     </main>
 </body>
 </html>
