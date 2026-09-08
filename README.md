@@ -1,6 +1,6 @@
 # FreeToGame Proxy Web API
 
-Projeto desenvolvido para a unidade curricular **UC00614 - Desenvolvimento de Aplicações Web** (Etapas 1 a 4).
+Projeto desenvolvido para a unidade curricular **UC00614 - Desenvolvimento de Aplicações Web** (Etapas 1 a 6).
 
 ## Tema
 - **Tema Atribuído:** Jogos
